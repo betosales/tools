@@ -31,20 +31,18 @@
           - terminator
           - virtualbox
           - snapd
-          - tilix
-          - variety
 
     - block:      
-      - name: Install Dbeaver CE
+      - name: Installling snap Apps
         become: true
         snap:
-          name: dbeaver-ce
-          
-    - block:      
-      - name: Install KeePass XC
-        become: true
-        snap:
-          name: keepassxc
+          name: '{{ item }}'
+        loop:
+          - dbeaver-ce
+          - keepassxc
+          - postman
+          - insomnia
+          - slack
           
     - block:
       - name: Verify if Oh-My-zsh is installed
