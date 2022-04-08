@@ -32,6 +32,7 @@
           - virtualbox
           - snapd
           - tilix
+          - variety
 
     - block:      
       - name: Install Dbeaver CE
