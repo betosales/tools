@@ -31,6 +31,8 @@
           - terminator
           - virtualbox
           - snapd
+          - variety
+          - tilix
 
     - block:      
       - name: Installling snap Apps
