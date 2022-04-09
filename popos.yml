@@ -28,11 +28,12 @@
           - zsh
           - flameshot
           - fonts-hack
-          - terminator
           - virtualbox
           - snapd
           - variety
           - tilix
+          - npm
+          - keepassxc
 
     - block:      
       - name: Installling snap Apps
@@ -41,7 +42,6 @@
           name: '{{ item }}'
         loop:
           - dbeaver-ce
-          - keepassxc
           - postman
           - insomnia
           - slack
