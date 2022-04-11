@@ -43,7 +43,6 @@
         loop:
           - dbeaver-ce
           - postman
-          - insomnia
           - slack
           
     - block:
